@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FeuilleDeMatch</string>
+    <string name="fait_name">Ajout fait de match</string>
+    <string name="button_new">Nouveau match</string>
+    <string name="button_delete">Supprimer</string>
+	<string name="button_open">Ouvrir un match</string>
+	<string name="button_pref">Préférences</string>
+	<string name="button_addEventLocaux">Evt loc.</string>
+	<string name="button_addEventVisitor">Evt visit.</string>
+	<string name="team_local">LOCAUX</string>
+	<string name="team_visitor">VISITEURS</string>
+	<string name="team_inconnue">Inconnu</string>
+	<string name="foo">foo</string>
+	<string name="fait_minute">Minute</string>
+	<string name="fait_joueur">Joueur</string>
+	<string name="fait_fait">Fait marquant</string>
+	<string name="fait_comment">Commentaire</string>
+	<string name="match_date">Date de la rencontre</string>
+	<string name="match_sport">Sport</string>
+	<string name="button_save">Enregistrer</string>
+	<string name="message_delete">Voulez vous vriment supprimer ce fait de match ?</string>
+	<string name="button_yes">Oui</string>
+	<string name="button_no">Non</string>
+	<string name="zero">0</string>
+	
+	
+	<!-- Libellés utilisés dans les parmatères -->
+	<string name="param_cd_rugby13">RUG13</string>
+	<string name="param_cd_rugby15">RUG15</string>
+	<string name="param_rugby13">Rugby à XIII</string>
+	<string name="param_rugby15">Rugby à XV</string>
+	
+	<string name="param_finmatch">Fin de match</string>
+	<string name="param_debutmatch">Début de match</string>
+	<string name="param_essai_penalite">Essai de pénalité</string>
+	<string name="param_essai">Essai</string>
+	<string name="param_drop">Drop</string>
+	<string name="param_penalite">Pénalité</string>
+	<string name="param_transformation">Transformation</string>
+	
+	
+	<style name="mainDispoStyle">
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:gravity">center</item>
+	</style>
+	<style name="mainScoreStyle" parent="mainDispoStyle">
+		<item name="android:textSize">30dp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="mainTeamStyle" parent="mainDispoStyle">
+		<item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+	</style>
+	<style name="mainButtonStyle" parent="mainDispoStyle">
+		<item name="android:padding">10dp</item>
+		
+	</style>
+	<style name="eventListeStyle" >
+	    <item name="android:background">#ffffff</item>
+	    <item name="android:layout_width">fill_parent</item>
+	    
+    </style>
+	<color name="white">#ffffff</color>	
+</resources>

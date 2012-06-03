@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1" >
+
+    <TextView
+            android:id="@+id/sportTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/foo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/addEventLocauxButton"
+            style="@style/mainButtonStyle"
+            android:layout_height="wrap_content"
+            android:text="@string/button_addEventLocaux" />
+
+        <Button
+            android:id="@+id/addEventVisitorButton"
+            style="@style/mainButtonStyle"
+            android:text="@string/button_addEventVisitor" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/mainTeamStyle"
+            android:text="@string/team_local"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/mainTeamStyle"
+            android:text="@string/team_visitor"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/scoreLocalTextView"
+            style="@style/mainScoreStyle"
+            android:text="@string/zero" />
+        <TextView
+            android:id="@+id/scoreVisitorTextView"
+            style="@style/mainScoreStyle"
+            android:text="@string/zero" />
+    </TableRow>
+
+    <ListView 
+        android:id="@+id/faitListView"  
+        	style="@style/eventListeStyle">
+    </ListView>
+
+</TableLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="splah_delay">3000</string>
     <string name="app_name">FeuilleDeMatch</string>
     <string name="fait_name">Ajout fait de match</string>
     <string name="button_new">Nouveau match</string>

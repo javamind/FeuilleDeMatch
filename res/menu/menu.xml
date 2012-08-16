@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item android:id="@+id/newMatch" android:title="@string/button_new"></item>
+     <item android:id="@+id/newMatch"
+          android:title="@string/button_new"
+          android:icon="@drawable/newmatch"
+          android:showAsAction="collapseActionView|ifRoom" />
+     
+     <item android:id="@+id/saveMatch"
+          android:title="@string/button_save"
+          android:icon="@drawable/save"
+          android:showAsAction="collapseActionView|ifRoom" />
+     
+     <item android:id="@+id/openMatch"
+          android:title="@string/button_open"
+          android:icon="@drawable/open"
+          android:showAsAction="collapseActionView|ifRoom" />
+     
+     <item android:id="@+id/shareMatch"
+          android:title="@string/button_delete"
+          android:icon="@drawable/share"
+          android:showAsAction="collapseActionView|ifRoom" />
+     
+     <item android:id="@+id/deleteMatch"
+          android:title="@string/button_delete"
+          android:icon="@drawable/remove"
+          android:showAsAction="collapseActionView|ifRoom" />
 </menu>

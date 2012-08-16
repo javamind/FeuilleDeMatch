@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.FeuilleDeMatch" parent="Theme.Sherlock.Light">
+       
+    </style>
+
+   
+    <style name="mainDispoStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="mainScoreStyle" parent="mainDispoStyle">
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mainTeamStyle" parent="mainDispoStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="mainButtonStyle" parent="mainDispoStyle">
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="eventListeStyle">
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <color name="white">#ffffff</color>
+
+</resources>

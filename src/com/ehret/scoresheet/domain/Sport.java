@@ -13,6 +13,19 @@ import android.os.Parcelable;
  */
 public class Sport implements Parcelable, ISpinnerData {
     /**
+     * Table name
+     */
+    public static final String TABLE_NAME = "sport";
+    /**
+     * Id (type : Long) {@link #id}
+     */
+    public static final String COLUMN_NAME_ID = "id";
+    /**
+     * Label (type : String) {@link #label}
+     */
+    public static final String COLUMN_NAME_LABEL = "label";
+    
+    /**
      * a sport has an id
      */
     private Long id;

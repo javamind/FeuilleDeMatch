@@ -2,7 +2,6 @@ package com.ehret.scoresheet;
 
 import java.util.List;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -15,12 +14,13 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.actionbarsherlock.app.SherlockActivity;
 import com.ehret.scoresheet.adapter.SpinnerCustomAdapter;
 import com.ehret.scoresheet.domain.MatchEvent;
 import com.ehret.scoresheet.domain.MatchTypeEvent;
 import com.ehret.scoresheet.domain.Team;
 
-public class MatchEventAdder extends Activity {
+public class MatchEventAdder extends SherlockActivity {
     public static final String TAG = "MatchEventAdder";
     public static final String PARAM_TEAM = "com.ehret.scoresheet.AddTeam";
     public static final String PARAM_SPORT_EVENTS = "com.ehret.scoresheet.SportEvents";
@@ -125,7 +125,7 @@ public class MatchEventAdder extends Activity {
     }
 
     /**
-     * Méthode permettant de supprimer le fait marquant 
+     * Mï¿½thode permettant de supprimer le fait marquant 
      */
     private void confirmDeleteEvent() {
 	AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -146,7 +146,7 @@ public class MatchEventAdder extends Activity {
 	    
     }
     /**
-     * Méthode permettant de supprimer le fait marquant 
+     * Mï¿½thode permettant de supprimer le fait marquant 
      */
     private void deleteEvent() {
 	Intent intent = this.getIntent();
@@ -156,7 +156,7 @@ public class MatchEventAdder extends Activity {
     }
     
     /**
-     * Méthode permettant de persister le fait de match saisi par l'utilisateur
+     * Mï¿½thode permettant de persister le fait de match saisi par l'utilisateur
      */
     private void saveEvent() {
 	// Read the user values
@@ -165,12 +165,12 @@ public class MatchEventAdder extends Activity {
 	}
 
 	try {
-	    matchEvent.setPlayer(new Integer(joueurEditText.getText().toString()));
+	    matchEvent.setPlayer(Integer.valueOf(joueurEditText.getText().toString()));
 	} catch (Exception e) {
 	    matchEvent.setPlayer(0);
 	}
 	try {
-	    matchEvent.setMinute(new Integer(minuteEditText.getText().toString()));
+	    matchEvent.setMinute(Integer.valueOf(minuteEditText.getText().toString()));
 	    minute = matchEvent.getMinute();
 	} catch (Exception e) {
 	    matchEvent.setMinute(0);
@@ -208,7 +208,7 @@ public class MatchEventAdder extends Activity {
 	minute = settings.getLong("minute", -1);
 
 	minuteEditText.setText(matchEvent.getMinute() != null ? matchEvent.getMinute().toString()
-		: new Long(minute + 1).toString());
+		: Long.valueOf(minute + 1).toString());
     }
 
     protected MatchEvent getMatchEvent() {

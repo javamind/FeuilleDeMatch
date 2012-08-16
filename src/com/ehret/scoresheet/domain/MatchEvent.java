@@ -10,6 +10,38 @@ import android.os.Parcelable;
  */
 public class MatchEvent implements Parcelable, ISpinnerData{
     /**
+     * Table name
+     */
+    public static final String TABLE_NAME = "event";
+    /**
+     * Id (type : Long) {@link #id}
+     */
+    public static final String COLUMN_NAME_ID = "id";
+    /**
+     * Team (type : String) {@link #team}
+     */
+    public static final String COLUMN_NAME_TEAM = "team";
+    /**
+     * Id type event (type : Long) {@link MatchTypeEvent#id}
+     */
+    public static final String COLUMN_NAME_ID_TYPE_EVENT = "id_type_event";
+    /**
+     * Id score sheet (type : Long) {@link ScoreSheet#id}
+     */
+    public static final String COLUMN_NAME_ID_SCORE_SHEET = "id_score_sheet";
+    /**
+     * Minute (type : Integer) {@link #minute}
+     */
+    public static final String COLUMN_NAME_MINUTE = "minute";
+    /**
+     * Player (type : Integer) {@link #player}
+     */
+    public static final String COLUMN_NAME_PLAYER = "player";
+    /**
+     * Comment (type : String) {@link #comment}
+     */
+    public static final String COLUMN_NAME_COMMENT = "comment";
+    /**
      * Id
      */
     private Long id;

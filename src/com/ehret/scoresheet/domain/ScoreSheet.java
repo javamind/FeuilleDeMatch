@@ -16,6 +16,30 @@ import android.os.Parcelable;
  */
 public class ScoreSheet implements Parcelable{
     /**
+     * Table name
+     */
+    public static final String TABLE_NAME = "score_sheet";
+    /**
+     * Id (type : Long) {@link #id}
+     */
+    public static final String COLUMN_NAME_ID = "id";
+    /**
+     * Date (type : String) {@link #date}
+     */
+    public static final String COLUMN_NAME_DATE = "date";
+    /**
+     * Id Sport (type : Lons) {@link #sport}
+     */
+    public static final String COLUMN_NAME_ID_SPORT = "id_sport";
+    /**
+     * Score team Home (type : Long) {@link #scoreHome}
+     */
+    public static final String COLUMN_NAME_SCORE_HOME = "scoreHome";
+    /**
+     * Score team Visitor (type : Long) {@link #scoreVisitor}
+     */
+    public static final String COLUMN_NAME_SCORE_VISITOR = "scoreVisitor";
+    /**
      * Id
      */
     private Long id;

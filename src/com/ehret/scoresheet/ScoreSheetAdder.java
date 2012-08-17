@@ -84,6 +84,7 @@ public class ScoreSheetAdder extends SherlockActivity {
 	// Handle item selection
 	if (item.getItemId() == R.id.openMatch){
 	    Intent intent = new Intent(this, ScoreSheetOpener.class);
+	    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	    startActivity(intent);
 	    finish();
 	}
@@ -105,6 +106,7 @@ public class ScoreSheetAdder extends SherlockActivity {
 	
 	// Appel de la feuille principale
 	Intent intent = new Intent(this, ScoreSheetActivity.class);
+	intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	intent.putExtra(ScoreSheetActivity.PARAM_SCORE_SHEET, scoreSheet);
 	this.setResult(RESULT_OK, intent);
 	startActivity(intent);

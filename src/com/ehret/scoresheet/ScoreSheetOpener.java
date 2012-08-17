@@ -55,6 +55,7 @@ public class ScoreSheetOpener extends SherlockActivity {
 	getScoreSheetDatabase().completeScoreSheet(scoreSheet);
 	//Return to the main activity
 	Intent intent = new Intent(this, ScoreSheetActivity.class);
+	intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	intent.putExtra(ScoreSheetActivity.PARAM_SCORE_SHEET, scoreSheet);
 	startActivity(intent);
 	finish();

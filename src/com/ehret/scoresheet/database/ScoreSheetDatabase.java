@@ -139,7 +139,7 @@ public class ScoreSheetDatabase {
 	
 	try {
 	    db.beginTransaction();
-	    if (scoreSheet.getId() == null) {
+	    if (scoreSheet.getId() == null || scoreSheet.getId()==0) {
 		long rowId = db.insert(ScoreSheet.TABLE_NAME, null, values);
 		scoreSheet.setId(rowId);
 	    } else {

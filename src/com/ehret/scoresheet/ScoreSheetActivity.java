@@ -164,6 +164,7 @@ public class ScoreSheetActivity extends SherlockActivity {
      */
     protected void launchScoreSheetAdder() {
 	Intent i = new Intent(this, ScoreSheetAdder.class);
+	i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	startActivity(i);
     }
 
@@ -199,6 +200,7 @@ public class ScoreSheetActivity extends SherlockActivity {
     protected void launchScoreSheetOpener() {
 	Intent i = new Intent(this, ScoreSheetOpener.class);
 	startActivity(i);
+	i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	finish();
     }
 
